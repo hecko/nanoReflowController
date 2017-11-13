@@ -14,7 +14,7 @@ J4,1,12v FAN,Pin_Header_Straight_2x01_Pitch2.54mm
 J9,1,CONN_01X05,Pin_Header_Straight_1x05_Pitch2.54mm
 JP1,1,VIN enabler,Pin_Header_Straight_1x02_Pitch2.54mm
 KK1,1,TRIAC HEATSINK,"(optional) SK_09_20_SA_TO_220"
-OK1,1,H11AA1,DIP-6_W7.62mm_LongPads
+OK1,1,H11AA1,DIP-6_W7.62mm_LongPads,Farnell:2322524
 Q1,1,IRF540N,"(for the fan interface, not yet used) TO-220_Vertical"
 "R1 R2",2,47k 0.6w,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
 R3,1,2.4k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
@@ -22,6 +22,6 @@ R4,1,180R,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
 R5,1,1k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
 R6,1,4K7,"(for the fan interface, not yet used) R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 R7,1,100K,"(for the fan interface, not yet used) R_1206_HandSoldering"
-TRIAC1,1,BT137,TO-220_Vertical_BT137
-U1,1,MOC3020M,DIP-6_W7.62mm_LongPads
+TRIAC1,1,BT137,TO-220_Vertical_BT137,Farnell:2777147
+U1,1,MOC3020M,DIP-6_W7.62mm_LongPads,Farnell:1471017
 

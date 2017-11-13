@@ -1,0 +1,17 @@
+Reflektor:
+https://www.hagard.sk/katalog-produktov/svietidla-zdroje-objimky-transformatory-1/svietidla-reflektory/reflektor-halogenovy-6107-500w-r7s-118mm-230v-ip44-cierna.html?page_id=44895
+EAN: 8590849061079 / Ecoplanet / Hagard kod: SRE000000154
+
+Kapton paska: P3D0107PT / elecrow
+
+Alobal
+
+6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka
+
+Elektronicke komponenty:
+  * encoder: SMEC11EN / elecrow
+  * display: DL144128TF / elecrow
+  * K-type thermocouple: SPM28130K / elecrow
+  * Arduino klon: MCA03328A / elecrow
+
+Vyroba dosiek: Elecrow / SPF11010S
