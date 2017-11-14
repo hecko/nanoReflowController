@@ -14,6 +14,6 @@ Elektronicke komponenty:
   * encoder: SMEC11EN / elecrow
   * display: DL144128TF / elecrow
   * K-type thermocouple: SPM28130K / elecrow
-  * Arduino klon: MCA03328A / elecrow
+  * Arduino Nano klon: MCA03328A / elecrow
 
 Vyroba dosiek: Elecrow / SPF11010S
