@@ -6,7 +6,7 @@ Kapton paska: P3D0107PT / elecrow
 
 Alobal
 
-6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka
+6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka: gumex.sk / 0165060000000209
 
 Elektronicke komponenty:
   * encoder: SMEC11EN / elecrow
