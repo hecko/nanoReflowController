@@ -1,12 +1,14 @@
 Reflektor:
-https://www.hagard.sk/katalog-produktov/svietidla-zdroje-objimky-transformatory-1/svietidla-reflektory/reflektor-halogenovy-6107-500w-r7s-118mm-230v-ip44-cierna.html?page_id=44895
-EAN: 8590849061079 / Ecoplanet / Hagard kod: SRE000000154
+  * https://www.hagard.sk/katalog-produktov/svietidla-zdroje-objimky-transformatory-1/svietidla-reflektory/reflektor-halogenovy-6107-500w-r7s-118mm-230v-ip44-cierna.html?page_id=44895 / EAN: 8590849061079 / Ecoplanet / Hagard kod: SRE000000154
 
-Kapton paska: P3D0107PT / elecrow
+Kapton paska:
+  * P3D0107PT / elecrow
 
 Alobal
 
-6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka: gumex.sk / 0165060000000209
+6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka
+  * gumex.sk / 0165060000000209
+  * http://www.sterimob.sk/e-4241-ptfe-trubka-teflon-64mm
 
 Elektronicke komponenty:
   * encoder: SMEC11EN / elecrow
