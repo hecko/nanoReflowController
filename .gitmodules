@@ -4,7 +4,7 @@
 	branch = arduino
 [submodule "libraries/Menu"]
 	path = libraries/Menu
-	url = git@github.com:0xPIT/menu.git
+	url = https://github.com/0xPIT/menu.git
 [submodule "libraries/PDQ_GFX_Libs"]
 	path = libraries/PDQ_GFX_Libs
 	url = https://github.com/XarkLabs/PDQ_GFX_Libs/
