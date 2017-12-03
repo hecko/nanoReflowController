@@ -10,7 +10,7 @@ J10,1,CONN_01X17,Pin_Header_Straight_1x17_Pitch2.54mm,
 J2,1,HEATER,TerminalBlock_Pheonix_MKDS1.5-2pol,Farnell:3714240
 J3,1,DC IN 12V,TerminalBlock_Pheonix_MKDS1.5-2pol,Farnell:3714240
 J4,1,12v FAN,Pin_Header_Straight_2x01_Pitch2.54mm,
-"J11 J5 J6 J7 J8",5,CONN_01X03,Pin_Header_Straight_1x03_Pitch2.54mm
+"J11 J5 J6 J7 J8",5,CONN_01X03,Pin_Header_Straight_1x03_Pitch2.54mm,
 J9,1,CONN_01X05,Pin_Header_Straight_1x05_Pitch2.54mm,
 JP1,1,VIN enabler,Pin_Header_Straight_1x02_Pitch2.54mm,
 KK1,1,TRIAC HEATSINK,"(optional) SK_09_20_SA_TO_220",
