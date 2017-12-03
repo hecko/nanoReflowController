@@ -11,6 +11,7 @@ Alobal
   * http://www.sterimob.sk/e-4241-ptfe-trubka-teflon-64mm
 
 Elektronicke komponenty:
+  * poistka: 1271687 / farnell
   * encoder: SMEC11EN / elecrow
   * display: DL144128TF / elecrow
   * K-type thermocouple: SPM28130K / elecrow
