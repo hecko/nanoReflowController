@@ -9,6 +9,7 @@ Alobal
 6mm (vonkajsi priemer / 4mm vnutorny) teflonova trubka
   * gumex.sk / 0165060000000209
   * http://www.sterimob.sk/e-4241-ptfe-trubka-teflon-64mm
+  * SOS: 26386
 
 Elektronicke komponenty:
   * poistka: 1271687 / farnell
