@@ -1,4 +1,4 @@
-Reference, Quantity, Value, Footprint
+Reference, Quantity, Value, Footprint, Where To Buy
 ARDUINO_NANO1,1,arduino_nano_header,arduino_nano_header
 BZ1,1,Buzzer,Buzzer_12x9.5RM7.6
 C1,1,"10n 1000v",C_Disc_D4.3mm_W1.9mm_P5.00mm,Farnell:9527257
