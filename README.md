@@ -104,7 +104,7 @@ Obtaining the source code
 
 Get the code using `git`.
 
-	git clone https://github.com/dasaki/nanoReflowController.git
+	git clone https://github.com/hecko/nanoReflowController.git
 
 or [download a Snapshot].
 
