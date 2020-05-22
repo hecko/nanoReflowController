@@ -32,7 +32,7 @@ U 1 1 591B0993
 P 3750 4100
 F 0 "C2" H 3800 4150 70  0000 L BNN
 F 1 "100n" H 3800 3950 70  0000 L BNN
-F 2 "Capacitors_SMD:C_0805" H 3740 3890 65  0001 L TNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3740 3890 65  0001 L TNN
 F 3 "" H 3750 4100 60  0001 C CNN
 	1    3750 4100
 	1    0    0    -1  
@@ -43,7 +43,7 @@ U 1 1 591B09B3
 P 2900 1750
 F 0 "R2" V 3150 1650 70  0000 L BNN
 F 1 "47k 0.6w" V 3050 1650 70  0000 L BNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2890 1540 65  0001 L TNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2890 1540 65  0001 L TNN
 F 3 "" H 2900 1750 60  0001 C CNN
 	1    2900 1750
 	0    1    -1   0   
@@ -78,7 +78,7 @@ U 1 1 591B3000
 P 6400 3850
 F 0 "R7" H 6430 3870 50  0000 L CNN
 F 1 "100K" H 6430 3810 50  0000 L CNN
-F 2 "Resistors_SMD:R_1210" H 6400 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 6400 3850 50  0001 C CNN
 F 3 "" H 6400 3850 50  0001 C CNN
 	1    6400 3850
 	1    0    0    -1  
@@ -163,14 +163,14 @@ D5
 Text Label 9800 3250 0    47   ~ 0
 D6
 $Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:IRF540N Q1
+L Transistor_FET:IRF540N Q1
 U 1 1 5922ADDA
-P 6750 4200
-F 0 "Q1" H 6950 4000 50  0000 L CNN
-F 1 "IRF540N" H 6950 4100 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 7000 4125 50  0001 L CIN
-F 3 "" H 6750 4200 50  0001 L CNN
-	1    6750 4200
+P 6750 4150
+F 0 "Q1" H 6950 3950 50  0000 L CNN
+F 1 "IRF540N" H 6950 4050 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7000 4075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 6750 4150 50  0001 L CNN
+	1    6750 4150
 	1    0    0    1   
 $EndComp
 Text Label 9800 2300 0    47   ~ 0
@@ -207,7 +207,7 @@ U 1 1 592ED2C4
 P 4100 4550
 F 0 "BZ1" H 4250 4600 50  0000 L CNN
 F 1 "Buzzer" H 4250 4500 50  0000 L CNN
-F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" V 4075 4650 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 4075 4650 50  0001 C CNN
 F 3 "" V 4075 4650 50  0001 C CNN
 	1    4100 4550
 	1    0    0    -1  
@@ -218,7 +218,7 @@ U 1 1 592E9629
 P 6150 4150
 F 0 "R6" V 6050 4150 50  0000 L CNN
 F 1 "4K7" V 5950 4100 50  0000 L CNN
-F 2 "Resistors_SMD:R_1210" H 6150 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 6150 4150 50  0001 C CNN
 F 3 "" H 6150 4150 50  0001 C CNN
 	1    6150 4150
 	0    -1   -1   0   
@@ -275,8 +275,6 @@ F 3 "" H 9600 3750 50  0001 C CNN
 $EndComp
 Text GLabel 10000 2950 2    60   Input ~ 0
 GND
-Text Label 3200 5150 0    47   ~ 0
-3V3
 Text GLabel 9800 2400 2    60   Input ~ 0
 5V
 $Comp
@@ -370,7 +368,7 @@ U 1 1 59493D8A
 P 2650 6950
 F 0 "J15" H 2650 7050 50  0000 C CNN
 F 1 "MOUNTING_HOLE" H 3100 6950 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 2650 6950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2650 6950 50  0001 C CNN
 F 3 "" H 2650 6950 50  0001 C CNN
 	1    2650 6950
 	1    0    0    -1  
@@ -381,24 +379,22 @@ U 1 1 59493E77
 P 1900 6600
 F 0 "J12" H 1900 6700 50  0000 C CNN
 F 1 "MOUNTING_HOLE" H 2350 6600 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 1900 6600 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1900 6600 50  0001 C CNN
 F 3 "" H 1900 6600 50  0001 C CNN
 	1    1900 6600
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2100 6600
 $Comp
 L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X01 J13
 U 1 1 59494846
 P 1900 6950
 F 0 "J13" H 1900 7050 50  0000 C CNN
 F 1 "MOUNTING_HOLE" H 2350 6950 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 1900 6950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1900 6950 50  0001 C CNN
 F 3 "" H 1900 6950 50  0001 C CNN
 	1    1900 6950
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2100 6950
 Text GLabel 6900 2350 2    60   Input ~ 0
 GND
 $Comp
@@ -436,7 +432,6 @@ F 3 "" H 5150 2050 60  0001 C CNN
 $EndComp
 Text Label 5000 1750 0    39   ~ 0
 AC_CAP
-NoConn ~ 2450 6950
 Text Label 2550 2050 0    39   ~ 0
 OC2
 Text Label 2550 1750 0    39   ~ 0
@@ -447,12 +442,11 @@ U 1 1 594DA504
 P 2650 6600
 F 0 "J14" H 2650 6700 50  0000 C CNN
 F 1 "MOUNTING_HOLE" H 3100 6600 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 2650 6600 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2650 6600 50  0001 C CNN
 F 3 "" H 2650 6600 50  0001 C CNN
 	1    2650 6600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2450 6600
 Text Label 8750 2550 0    47   ~ 0
 ENC_1
 Text Label 8750 2450 0    47   ~ 0
@@ -476,7 +470,7 @@ U 1 1 594D120C
 P 2900 2050
 F 0 "R1" V 2850 1950 70  0000 L BNN
 F 1 "47k 0.6w" V 2750 1950 70  0000 L BNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2890 1840 65  0001 L TNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2890 1840 65  0001 L TNN
 F 3 "" H 2900 2050 60  0001 C CNN
 	1    2900 2050
 	0    1    -1   0   
@@ -673,15 +667,13 @@ Wire Wire Line
 Wire Wire Line
 	3200 4150 3350 4150
 Wire Wire Line
-	6850 3550 6850 4000
+	6850 3550 6850 3950
 Wire Wire Line
 	6400 3750 6400 3550
 Connection ~ 6400 3550
 Wire Wire Line
 	6400 3950 6400 4150
 Connection ~ 6400 4150
-Wire Wire Line
-	6850 4400 6850 4700
 Wire Wire Line
 	2100 4150 2200 4150
 Wire Wire Line
@@ -695,7 +687,7 @@ AC2_OUT
 Text GLabel 5200 6700 1    60   Input ~ 0
 AC1_OUT
 Text GLabel 3150 2050 2    60   Input ~ 0
-AC2
+AC2_IN
 Text GLabel 3150 1750 2    60   Input ~ 0
 AC1_IN
 Wire Wire Line
@@ -815,4 +807,23 @@ Wire Wire Line
 Wire Wire Line
 	3200 3950 3750 3950
 Connection ~ 3750 3950
+Text GLabel 2275 7000 3    60   Input ~ 0
+GND
+Wire Wire Line
+	2100 6600 2275 6600
+Wire Wire Line
+	2275 6600 2275 6950
+Wire Wire Line
+	2100 6950 2275 6950
+Connection ~ 2275 6950
+Wire Wire Line
+	2275 6950 2275 7000
+Wire Wire Line
+	2450 6950 2275 6950
+Wire Wire Line
+	2450 6600 2275 6600
+Connection ~ 2275 6600
+Wire Wire Line
+	6850 4350 6850 4700
+NoConn ~ 3200 5150
 $EndSCHEMATC
