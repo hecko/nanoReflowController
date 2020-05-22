@@ -7,3 +7,4 @@ cp -R ./PID_v1 ~/Documents/Arduino/libraries/
 cp -R ./PDQ_GFX_Libs/PDQ_* ~/Documents/Arduino/libraries/
 cp -R ./Menu ~/Documents/Arduino/libraries/
 cp -R ./encoder ~/Documents/Arduino/libraries/ClickEncoder
+cp -R ./TimerOne ~/Documents/Arduino/libraries/TimerOne
