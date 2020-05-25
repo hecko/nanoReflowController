@@ -17,3 +17,6 @@
 [submodule "timerone"]
 	path = libraries/TimerOne
 	url = https://github.com/PaulStoffregen/TimerOne.git
+[submodule "PID_v1"]
+	path = libraries/PID_v1
+	url = https://github.com/br3ttb/Arduino-PID-Library.git
