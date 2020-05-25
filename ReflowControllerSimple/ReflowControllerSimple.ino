@@ -13,7 +13,7 @@
 #define PIN_TC_DO 12
 #define PIN_TC_CLK 13
 
-#define TARGET_TEMP 60
+#define TARGET_TEMP 105
 
 MAX6675 thermocouple(PIN_TC_CLK, PIN_TC_CS, PIN_TC_DO);
 
@@ -34,12 +34,22 @@ void loop() {
     digitalWrite(PIN_HEATER, LOW);
     delay(10000);
   }
+
+  Serial.print("target C: ");
+  Serial.print(TARGET_TEMP);
+  Serial.print(" -> ");
+  Serial.print("current C: ");
+  Serial.print(round(t));
+  Serial.print(" -> ");
+  
   if (t < TARGET_TEMP) {
+    Serial.println("ON!");
     digitalWrite(PIN_HEATER, HIGH);
     delay(500);
     digitalWrite(PIN_HEATER, LOW);
     delay(100);
   } else {
+    Serial.println("OFF!");
     digitalWrite(PIN_HEATER, LOW);
     delay(1000);
   }
@@ -55,9 +65,6 @@ float readThermocouple() {
     Serial.println("Unable to read temperature!");
     temperature = -100;
   }
-
-  Serial.print("temperature: ");
-  Serial.println(round(temperature));
 
   digitalWrite(PIN_TC_CS, HIGH);
   return temperature;
