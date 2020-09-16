@@ -72,10 +72,12 @@ void loop() {
       Serial.println(round(t));
       if (t < 45) {
         fan_off();
-        tone(BUZZER_PIN, 4000);
-        delay(500);
-        noTone(BUZZER_PIN);
-        delay(15000);
+        while (1) {
+          tone(BUZZER_PIN, 4000);
+          delay(500);
+          noTone(BUZZER_PIN);
+          delay(15000);
+        }
       }
     }
   }
