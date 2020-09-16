@@ -13,6 +13,7 @@
 #define PIN_TC_DO 12
 #define PIN_TC_CLK 13
 #define FAN_PIN A0
+#define BUZZER_PIN A5
 
 #define TARGET_TEMP 250
 
@@ -21,6 +22,11 @@ MAX6675 thermocouple(PIN_TC_CLK, PIN_TC_CS, PIN_TC_DO);
 void setup() {
   pinMode(PIN_HEATER, OUTPUT);
   pinMode(FAN_PIN, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+
+  tone(BUZZER_PIN, 4000);
+  delay(100);
+  noTone(BUZZER_PIN);
 
   digitalWrite(PIN_HEATER, 0);
 
@@ -35,7 +41,12 @@ void loop() {
   if ((t < 5) || (t > 260)) {
     Serial.println("Kill heater - something wrong with temperature probe!");
     digitalWrite(PIN_HEATER, LOW);
-    while (1) {};
+    while (1) {
+      tone(BUZZER_PIN, 4000);
+      delay(2000);
+      noTone(BUZZER_PIN);
+      delay(1000);
+    };
   }
 
   Serial.print("target C: ");
@@ -59,6 +70,10 @@ void loop() {
       Serial.println(round(t));
       if (t < 45) {
         fan_off();
+        tone(BUZZER_PIN, 4000);
+        delay(500);
+        noTone(BUZZER_PIN);
+        delay(15000);
       }
     }
   }
