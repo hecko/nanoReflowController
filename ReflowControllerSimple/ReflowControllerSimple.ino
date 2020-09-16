@@ -38,8 +38,10 @@ float t = 100;
 
 void loop() {
   t = readThermocouple();
-  if ((t < 5) || (t > 260)) {
+  if (t > 260) {
     Serial.println("Kill heater - something wrong with temperature probe!");
+    Serial.print("current C: ");
+    Serial.println(round(t));
     digitalWrite(PIN_HEATER, LOW);
     while (1) {
       tone(BUZZER_PIN, 4000);
