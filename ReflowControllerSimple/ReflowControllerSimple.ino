@@ -70,11 +70,18 @@ void loop() {
       t = readThermocouple();
       Serial.print("Current C: ");
       Serial.println(round(t));
+      if (t < 150) {
+          // part can be taken from the heating lamp
+          tone(BUZZER_PIN, 6000);
+          delay(50);
+          noTone(BUZZER_PIN);
+          delay(5000);
+      }
       if (t < 45) {
         fan_off();
         while (1) {
           tone(BUZZER_PIN, 4000);
-          delay(500);
+          delay(1000);
           noTone(BUZZER_PIN);
           delay(15000);
         }
