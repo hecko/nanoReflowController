@@ -16,10 +16,10 @@ $EndDescr
 NoConn ~ 2500 4050
 NoConn ~ 3200 5050
 $Comp
-L arduino-headers:arduino_nano_header ARDUINO_NANO1
+L arduino-headers:arduino_nano_header ARDUINO_NANO_(5V)1
 U 1 1 58EC872C
 P 2850 4550
-F 0 "ARDUINO_NANO1" H 2850 5350 60  0000 C CNN
+F 0 "ARDUINO_NANO_(5V)1" H 2850 5350 60  0000 C CNN
 F 1 "arduino_nano_header" H 2850 3750 60  0000 C CNN
 F 2 "Module:Arduino_Nano" H 2850 3600 60  0001 C CNN
 F 3 "" H 2850 4550 60  0000 C CNN
@@ -30,8 +30,8 @@ $Comp
 L Device:C C2
 U 1 1 591B0993
 P 3750 4100
-F 0 "C2" H 3800 4150 70  0000 L BNN
-F 1 "100n" H 3800 3950 70  0000 L BNN
+F 0 "C2" H 3875 4125 70  0000 L BNN
+F 1 "100n" H 3875 4025 70  0000 L BNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3740 3890 65  0001 L TNN
 F 3 "" H 3750 4100 60  0001 C CNN
 	1    3750 4100
@@ -206,7 +206,7 @@ L Device:Buzzer BZ1
 U 1 1 592ED2C4
 P 4100 4550
 F 0 "BZ1" H 4250 4600 50  0000 L CNN
-F 1 "Buzzer" H 4250 4500 50  0000 L CNN
+F 1 "Buzzer with generator" H 4250 4500 50  0000 L CNN
 F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 4075 4650 50  0001 C CNN
 F 3 "" V 4075 4650 50  0001 C CNN
 	1    4100 4550
@@ -231,26 +231,8 @@ Text Label 3200 4650 0    47   ~ 0
 A3
 Text Label 3200 4550 0    47   ~ 0
 A4
-Text GLabel 8500 3650 2    60   Input ~ 0
-GND
-Text GLabel 8500 3550 2    60   Input ~ 0
-GND
-Text GLabel 8500 3450 2    60   Input ~ 0
-GND
-Text GLabel 8500 2900 2    60   Input ~ 0
-5V
-Text GLabel 8500 3000 2    60   Input ~ 0
-5V
-Text GLabel 8500 3100 2    60   Input ~ 0
-5V
-Text GLabel 8500 4200 2    60   Input ~ 0
-12v
-Text GLabel 8500 4100 2    60   Input ~ 0
-12v
-Text GLabel 8500 4000 2    60   Input ~ 0
-12v
 $Comp
-L Device:Jumper JP1
+L Jumper:Jumper_2_Open JP1
 U 1 1 592F07D7
 P 3700 3850
 F 0 "JP1" H 3700 4000 50  0000 C CNN
@@ -277,63 +259,8 @@ Text GLabel 10000 2950 2    60   Input ~ 0
 GND
 Text GLabel 9800 2400 2    60   Input ~ 0
 5V
-$Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X03 J5
-U 1 1 5932D012
-P 8300 2450
-F 0 "J5" H 8300 2650 50  0000 C CNN
-F 1 "CONN_01X03" V 8400 2450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8300 2450 50  0001 C CNN
-F 3 "" H 8300 2450 50  0001 C CNN
-	1    8300 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X03 J6
-U 1 1 5932D24B
-P 8300 3000
-F 0 "J6" H 8300 3200 50  0000 C CNN
-F 1 "CONN_01X03" V 8400 3000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8300 3000 50  0001 C CNN
-F 3 "" H 8300 3000 50  0001 C CNN
-	1    8300 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X03 J7
-U 1 1 5932D3FD
-P 8300 3550
-F 0 "J7" H 8300 3750 50  0000 C CNN
-F 1 "CONN_01X03" V 8400 3550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8300 3550 50  0001 C CNN
-F 3 "" H 8300 3550 50  0001 C CNN
-	1    8300 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X03 J8
-U 1 1 5932D690
-P 8300 4100
-F 0 "J8" H 8300 4300 50  0000 C CNN
-F 1 "CONN_01X03" V 8400 4100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8300 4100 50  0001 C CNN
-F 3 "" H 8300 4100 50  0001 C CNN
-	1    8300 4100
-	-1   0    0    1   
-$EndComp
 Text GLabel 1550 2050 0    60   Input ~ 0
 GND
-$Comp
-L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X02 J4
-U 1 1 5932F8DA
-P 7000 5350
-F 0 "J4" H 7000 5500 50  0000 C CNN
-F 1 "12v FAN" V 7100 5350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm" H 7000 5350 50  0001 C CNN
-F 3 "" H 7000 5350 50  0001 C CNN
-	1    7000 5350
-	0    -1   1    0   
-$EndComp
 $Comp
 L Device:R R5
 U 1 1 591B09B2
@@ -447,12 +374,6 @@ F 3 "" H 2650 6600 50  0001 C CNN
 	1    2650 6600
 	1    0    0    -1  
 $EndComp
-Text Label 8750 2550 0    47   ~ 0
-ENC_1
-Text Label 8750 2450 0    47   ~ 0
-ENC_2
-Text Label 8750 2350 0    47   ~ 0
-ENC_3
 $Comp
 L arduino_nano_reflow_TRIAC_v1_0-rescue:CONN_01X03 J11
 U 1 1 594DBC2E
@@ -520,18 +441,6 @@ Text Label 2350 4550 2    47   ~ 0
 D5
 Text Label 2350 4650 2    47   ~ 0
 D6
-Text Label 8500 2350 0    47   ~ 0
-A2
-Text Label 8500 2450 0    47   ~ 0
-A3
-Text Label 8500 2550 0    47   ~ 0
-A4
-Wire Wire Line
-	8500 2550 8750 2550
-Wire Wire Line
-	8750 2450 8500 2450
-Wire Wire Line
-	8500 2350 8750 2350
 Wire Notes Line
 	5300 5650 5300 3400
 Wire Notes Line
@@ -603,9 +512,9 @@ Wire Wire Line
 Wire Wire Line
 	6900 2150 6800 2150
 Wire Wire Line
-	7150 5150 7050 5150
+	7150 5150 7100 5150
 Wire Wire Line
-	6850 5150 6950 5150
+	6850 5150 6900 5150
 Wire Wire Line
 	10000 2950 9800 2950
 Wire Wire Line
@@ -624,8 +533,6 @@ Wire Wire Line
 	9800 4350 9950 4350
 Wire Wire Line
 	9800 4250 9800 4350
-Wire Wire Line
-	4100 3850 4000 3850
 Wire Wire Line
 	1550 2050 1700 2050
 Wire Wire Line
@@ -660,8 +567,6 @@ Wire Wire Line
 	2500 4750 2350 4750
 Wire Wire Line
 	7150 4500 7150 4700
-Wire Wire Line
-	3200 3850 3400 3850
 Wire Wire Line
 	3200 4150 3350 4150
 Wire Wire Line
@@ -838,4 +743,19 @@ Wire Wire Line
 	2300 1950 2300 2050
 Wire Wire Line
 	2300 2050 2750 2050
+Wire Wire Line
+	3200 3850 3500 3850
+Wire Wire Line
+	3900 3850 4100 3850
+$Comp
+L arduino_nano_reflow_TRIAC_v1_0-rescue:Screw_Terminal_1x02 J4
+U 1 1 5F64DEBD
+P 7000 5350
+F 0 "J4" H 7000 5600 50  0000 C TNN
+F 1 "12V FAN" V 6850 5350 50  0000 C TNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 7000 5125 50  0001 C CNN
+F 3 "" H 6975 5350 50  0001 C CNN
+	1    7000 5350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
