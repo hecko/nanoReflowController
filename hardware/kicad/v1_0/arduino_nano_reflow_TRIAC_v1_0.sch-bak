@@ -16,10 +16,10 @@ $EndDescr
 NoConn ~ 2500 4050
 NoConn ~ 3200 5050
 $Comp
-L arduino-headers:arduino_nano_header ARDUINO_NANO_5V
+L arduino-headers:arduino_nano_header ARDUINO_NANO_(5V)1
 U 1 1 58EC872C
 P 2850 4550
-F 0 "ARDUINO_NANO_5V" H 2850 5350 60  0000 C CNN
+F 0 "ARDUINO_NANO_(5V)1" H 2850 5350 60  0000 C CNN
 F 1 "arduino_nano_header" H 2850 3750 60  0000 C CNN
 F 2 "Module:Arduino_Nano" H 2850 3600 60  0001 C CNN
 F 3 "" H 2850 4550 60  0000 C CNN

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name local_libraries)(type KiCad)(uri C:/Users/maco/Documents/git/nanoReflowController/hardware/kicad/v1_0/local_libraries)(options "")(descr ""))
+)
