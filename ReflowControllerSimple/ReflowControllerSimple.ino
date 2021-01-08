@@ -38,7 +38,8 @@ float t = 100;
 
 void loop() {
   t = readThermocouple();
-  if (t > 260) {
+  t = readThermocouple();
+  if ((t > 260) || (t <= 0)) {
     Serial.println("Kill heater - something wrong with temperature probe!");
     Serial.print("current C: ");
     Serial.println(round(t));
@@ -71,11 +72,11 @@ void loop() {
       Serial.print("Current C: ");
       Serial.println(round(t));
       if (t < 150) {
-          // part can be taken from the heating lamp
-          tone(BUZZER_PIN, 6000);
-          delay(50);
-          noTone(BUZZER_PIN);
-          delay(5000);
+        // part can be taken from the heating lamp
+        tone(BUZZER_PIN, 6000);
+        delay(50);
+        noTone(BUZZER_PIN);
+        delay(5000);
       }
       if (t < 45) {
         fan_off();
@@ -103,7 +104,7 @@ void fan_off() {
 float readThermocouple() {
   digitalWrite(PIN_LCD_CS, HIGH);
   digitalWrite(PIN_TC_CS, LOW);
-  delay(10); // otherwise does not work!!
+  delay(100); // otherwise does not work!!
   float temperature = thermocouple.readCelsius();
   delay(1000); // otherwise does not work!!
 
