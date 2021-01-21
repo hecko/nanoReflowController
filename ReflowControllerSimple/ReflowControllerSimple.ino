@@ -1,11 +1,17 @@
 //
-// This version does not use display, buttons or other fancy stuff and only works as
-// a very fundamental baker - reach TARGET_TEMP, tne turn FAN on and then end forever until reset
+// This version does not use display, buttons or other fancy stuff and only
+// works as a very fundamental baker - reach TARGET_TEMP, tne turn FAN on and
+// then end forever until reset
 //
 
 #include "max6675.h"
+#include <TM1637Display.h>
 
 #define PIN_HEATER 3
+
+#define PIN_LCD_VCC 4
+#define PIN_LCD_DIO 5
+#define PIN_LCD_CLK 6
 
 #define PIN_LCD_CS 10
 
@@ -17,12 +23,18 @@
 
 #define TARGET_TEMP 250
 
+TM1637Display display(PIN_LCD_CLK, PIN_LCD_DIO);
 MAX6675 thermocouple(PIN_TC_CLK, PIN_TC_CS, PIN_TC_DO);
 
 void setup() {
   pinMode(PIN_HEATER, OUTPUT);
   pinMode(FAN_PIN, OUTPUT);
   pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(PIN_LCD_VCC, OUTPUT);
+  digitalWrite(PIN_LCD_VCC, HIGH);
+
+  display.setBrightness(0x0f);
+  display.showNumberDec(8888, false);
 
   tone(BUZZER_PIN, 4000);
   delay(100);
@@ -58,6 +70,9 @@ void loop() {
   Serial.print("current C: ");
   Serial.print(round(t));
   Serial.print(" -> ");
+  display.clear();
+  delay(50);
+  display.showNumberDec(t, false);
 
   if (t < TARGET_TEMP) {
     Serial.println("ON!");
@@ -71,7 +86,10 @@ void loop() {
       t = readThermocouple();
       Serial.print("Current C: ");
       Serial.println(round(t));
-      if (t < 150) {
+      display.clear();
+      delay(50);
+      display.showNumberDec(t, false);
+      if (t < 150 && t >= 45) {
         // part can be taken from the heating lamp
         tone(BUZZER_PIN, 6000);
         delay(50);
@@ -80,12 +98,10 @@ void loop() {
       }
       if (t < 45) {
         fan_off();
-        while (1) {
-          tone(BUZZER_PIN, 4000);
-          delay(1000);
-          noTone(BUZZER_PIN);
-          delay(15000);
-        }
+        tone(BUZZER_PIN, 4000);
+        delay(1000);
+        noTone(BUZZER_PIN);
+        delay(15000);
       }
     }
   }
@@ -102,7 +118,6 @@ void fan_off() {
 }
 
 float readThermocouple() {
-  digitalWrite(PIN_LCD_CS, HIGH);
   digitalWrite(PIN_TC_CS, LOW);
   delay(100); // otherwise does not work!!
   float temperature = thermocouple.readCelsius();
