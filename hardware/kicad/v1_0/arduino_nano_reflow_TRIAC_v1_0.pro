@@ -1,4 +1,4 @@
-update=2020 May 23, Saturday 00:36:29
+update=2021 January 11, Monday 22:32:50
 version=1
 last_client=kicad
 [cvpcb]
@@ -36,8 +36,9 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.5
-TrackWidth2=1
-TrackWidth3=2
+TrackWidth2=0.3
+TrackWidth3=1
+TrackWidth4=2
 ViaDiameter1=0.6
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -63,7 +64,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.2
+SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
