@@ -14,8 +14,8 @@ Alobal
 Elektronicke komponenty:
   * poistka: 1271687 / farnell
   * encoder: SMEC11EN / elecrow
-  * display: DL144128TF / elecrow
-  * K-type thermocouple: SPM28130K / elecrow
+  * display: https://techfun.sk/produkt/segmentovy-display-tm1637
+  * K-type thermocouple: SPM28130K / elecrow / https://techfun.sk/produkt/k-type-termoclanok-kabel-1-meter/
   * Arduino Nano klon: MCA03328A / elecrow
 
 Vyroba dosiek: Elecrow / SPF11010S
