@@ -9,11 +9,8 @@
 
 #define PIN_HEATER 3
 
-#define PIN_LCD_VCC 4
-#define PIN_LCD_DIO 5
-#define PIN_LCD_CLK 6
-
-#define PIN_LCD_CS 10
+#define PIN_LCD_DIO 4
+#define PIN_LCD_CLK 5
 
 #define PIN_TC_CS A1
 #define PIN_TC_DO 12
@@ -30,8 +27,6 @@ void setup() {
   pinMode(PIN_HEATER, OUTPUT);
   pinMode(FAN_PIN, OUTPUT);
   pinMode(BUZZER_PIN, OUTPUT);
-  pinMode(PIN_LCD_VCC, OUTPUT);
-  digitalWrite(PIN_LCD_VCC, HIGH);
 
   display.setBrightness(0x0f);
   display.showNumberDec(8888, false);
@@ -49,7 +44,7 @@ void setup() {
 float t = 100;
 
 void loop() {
-  t = readThermocouple();
+  t = -1;
   t = readThermocouple();
   if ((t > 260) || (t <= 0)) {
     Serial.println("Kill heater - something wrong with temperature probe!");
@@ -71,7 +66,7 @@ void loop() {
   Serial.print(round(t));
   Serial.print(" -> ");
   display.clear();
-  delay(50);
+  delay(50); // ak tu toto nie je senzor vracia stale tu istu hodnotu!
   display.showNumberDec(t, false);
 
   if (t < TARGET_TEMP) {
@@ -121,7 +116,7 @@ float readThermocouple() {
   digitalWrite(PIN_TC_CS, LOW);
   delay(100); // otherwise does not work!!
   float temperature = thermocouple.readCelsius();
-  delay(1000); // otherwise does not work!!
+  delay(100); // otherwise does not work!!
 
   if (temperature == NAN) {
     Serial.println("Unable to read temperature!");
