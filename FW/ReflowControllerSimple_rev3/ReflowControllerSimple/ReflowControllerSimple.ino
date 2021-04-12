@@ -46,6 +46,8 @@ float t = 100;
 void loop() {
   t = -1;
   t = readThermocouple();
+  t = readThermocouple();
+  t = readThermocouple();
   if ((t > 260) || (t <= 0)) {
     Serial.println("Kill heater - something wrong with temperature probe!");
     Serial.print("current C: ");
@@ -114,9 +116,9 @@ void fan_off() {
 
 float readThermocouple() {
   digitalWrite(PIN_TC_CS, LOW);
-  delay(100); // otherwise does not work!!
+  delay(300); // otherwise does not work!!
   float temperature = thermocouple.readCelsius();
-  delay(100); // otherwise does not work!!
+  delay(300); // otherwise does not work!!
 
   if (temperature == NAN) {
     Serial.println("Unable to read temperature!");
