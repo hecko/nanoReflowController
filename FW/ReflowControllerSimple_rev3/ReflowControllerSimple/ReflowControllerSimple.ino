@@ -18,7 +18,7 @@
 #define FAN_PIN A0
 #define BUZZER_PIN A5
 
-#define TARGET_TEMP 250
+#define TARGET_TEMP 240
 
 TM1637Display display(PIN_LCD_CLK, PIN_LCD_DIO);
 MAX6675 thermocouple(PIN_TC_CLK, PIN_TC_CS, PIN_TC_DO);
