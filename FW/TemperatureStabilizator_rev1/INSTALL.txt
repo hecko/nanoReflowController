@@ -1,0 +1,4 @@
+use arduino librarby manager to install:
+  * https://github.com/avishorp/TM1637 (the one from Avishay Orpaz)
+  * PID library from Brett Beauregard
+  * max6675 from Adafruit
