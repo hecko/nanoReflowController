@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name arduino_nano_reflow_TRIAC_v1_0-rescue)(type Legacy)(uri ${KIPRJMOD}/arduino_nano_reflow_TRIAC_v1_0-rescue.lib)(options "")(descr ""))
+  (lib (name arduino-headers)(type Legacy)(uri "${KIPRJMOD}/local_libraries/arduino headers.lib")(options "")(descr ""))
+  (lib (name max6675)(type Legacy)(uri ${KIPRJMOD}/local_libraries/max6675.lib)(options "")(descr ""))
+  (lib (name BT137)(type Legacy)(uri ${KIPRJMOD}/local_libraries/BT137.lib)(options "")(descr ""))
+  (lib (name SK_09_20_SA_TO_220)(type Legacy)(uri ${KIPRJMOD}/local_libraries/SK_09_20_SA_TO_220.lib)(options "")(descr ""))
+  (lib (name H11AA1)(type Legacy)(uri ${KIPRJMOD}/local_libraries/H11AA1.lib)(options "")(descr ""))
+)

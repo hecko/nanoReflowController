@@ -1,0 +1,307 @@
+Cmp-Mod V01 Created by PcbNew   date = dom 25 jun 2017 11:49:03 CEST
+
+BeginCmp
+TimeStamp = 594900F1
+Path = /594E4EF6
+Reference = OK1;
+ValeurCmp = H11AA1;
+IdModule  = Housings_DIP:DIP-6_W7.62mm_LongPads;
+EndCmp
+
+BeginCmp
+TimeStamp = 591DC878
+Path = /58EC872C
+Reference = ARDUINO_NANO1;
+ValeurCmp = arduino_nano_header;
+IdModule  = local_modules:arduino_nano_header;
+EndCmp
+
+BeginCmp
+TimeStamp = 591C2CF0
+Path = /591B3000
+Reference = R7;
+ValeurCmp = 100K;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 592E87B9
+Path = /592EA702
+Reference = J9;
+ValeurCmp = CONN_01X05;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 591C2CCC
+Path = /5922ADDA
+Reference = Q1;
+ValeurCmp = IRF540N;
+IdModule  = TO_SOT_Packages_THT:TO-220_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 591C2CF6
+Path = /591B09B5
+Reference = R8;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5923E729
+Path = /591B6CFC
+Reference = J1;
+ValeurCmp = AC IN 220v;
+IdModule  = Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol;
+EndCmp
+
+BeginCmp
+TimeStamp = 5923E72E
+Path = /591B6E41
+Reference = J2;
+ValeurCmp = HEATER;
+IdModule  = Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol;
+EndCmp
+
+BeginCmp
+TimeStamp = 5923E733
+Path = /591B70EE
+Reference = J3;
+ValeurCmp = DC IN 12V;
+IdModule  = Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol;
+EndCmp
+
+BeginCmp
+TimeStamp = 592E9671
+Path = /592ED2C4
+Reference = BZ1;
+ValeurCmp = Buzzer;
+IdModule  = Buzzers_Beepers:Buzzer_12x9.5RM7.6;
+EndCmp
+
+BeginCmp
+TimeStamp = 592ED077
+Path = /592F07D7
+Reference = JP1;
+ValeurCmp = Jumper;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 592EDBE6
+Path = /592F1E66
+Reference = J10;
+ValeurCmp = CONN_01X17;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 592EDF15
+Path = /5922C486
+Reference = D1;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_THT:D_A-405_P5.08mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 592F4617
+Path = /592F4A3D
+Reference = JP2;
+ValeurCmp = SPI_VCC_selector;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 592F48DC
+Path = /592F5D2D
+Reference = D2;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_SMD:D_SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 592F48E2
+Path = /592F6080
+Reference = D3;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_SMD:D_SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 5932B6DC
+Path = /5932D690
+Reference = J8;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5932B780
+Path = /5932D012
+Reference = J5;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5932B786
+Path = /5932D24B
+Reference = J6;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5932B78C
+Path = /5932D3FD
+Reference = J7;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5932CC3B
+Path = /5932F8DA
+Reference = J4;
+ValeurCmp = 12v FAN;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59480B77
+Path = /594C4C94
+Reference = D5;
+ValeurCmp = BT137;
+IdModule  = TO_SOT_Packages_THT:TO-220_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 594920D2
+Path = /59493D8A
+Reference = J11;
+ValeurCmp = MOUNTING_HOLE;
+IdModule  = Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 594920DE
+Path = /59493E77
+Reference = J12;
+ValeurCmp = MOUNTING_HOLE;
+IdModule  = Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 594921D3
+Path = /59494846
+Reference = J13;
+ValeurCmp = MOUNTING_HOLE;
+IdModule  = Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCE24
+Path = /591B0993
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCE3E
+Path = /594828A1
+Reference = R3;
+ValeurCmp = 2.4k;
+IdModule  = Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCE6D
+Path = /592E9629
+Reference = R6;
+ValeurCmp = 4K7;
+IdModule  = Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCE82
+Path = /591B09B6
+Reference = R9;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCF66
+Path = /594CE73E
+Reference = C1;
+ValeurCmp = 10n;
+IdModule  = Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CE2D4
+Path = /594CBE26
+Reference = U1;
+ValeurCmp = MOC3020M;
+IdModule  = Housings_DIP:DIP-6_W7.62mm_LongPads;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CE499
+Path = /594DA504
+Reference = J14;
+ValeurCmp = MOUNTING_HOLE;
+IdModule  = Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CCE68
+Path = /591B09B2
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CE926
+Path = /594DBC2E
+Reference = J15;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 594D1216
+Path = /594D120C
+Reference = R1;
+ValeurCmp = 100k;
+IdModule  = Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 594D13B7
+Path = /591B09B3
+Reference = R2;
+ValeurCmp = 100k;
+IdModule  = Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 594EA859
+Path = /594EA73D
+Reference = KK1;
+ValeurCmp = HEATSINK SK0920SATO220;
+IdModule  = local_modules:SK_09_20_SA_TO_220;
+EndCmp
+
+BeginCmp
+TimeStamp = 594CE0CA
+Path = /594CDF2B
+Reference = R4;
+ValeurCmp = 180;
+IdModule  = Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+EndListe
